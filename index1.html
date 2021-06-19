@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <title>Book-Shelf.com</title>
+
+</head>
+
+
+
+<body>
+  <!--Navbar-->
+ 
+    <nav class="navbar navbar-expand-lg navbar- bg-">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index1.html">
+                
+                   <img src="img/Bookshelf.com2.png" alt="Book-shelf.com" style= "height: 80px;">
+               
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index1.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="novels.html">Novels</a></li><hr>
+                            <li><a class="dropdown-item" href="Science-fiction.html">Science Fiction</a></li>
+                            <li><a class="dropdown-item" href="Islamic.html">Islamic</a></li>
+                            <li><a class="dropdown-item" href="Foreign.html">Foreign</a></li>
+                            <li><a class="dropdown-item" href="Self development and Motivational.html">Self-Development and Motivational</a></li>
+                            <li><a class="dropdown-item" href="Career and Skill Development.html">Career and Skill Development</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+
+
+
+                    <li class="nav-item">
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Register</button>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+                                <h2 class="rg" style="margin-left: 0.5cm;">Register</h2>
+
+                                <div class="container">
+
+
+                                    <p class="rg">Please fill in this form to create an account.</p>
+
+                                    <hr>
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter email" name="email" required>
+
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                                    <label for="Re-password"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="Re-password" required>
+
+
+                                    <button class=type="submit">Register</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+
+
+                                </div>
+                            </form>
+                        </div>    
+
+
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById('id01');
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <button onclick="document.getElementById('id02').style.display='block'"
+                            style="width:auto;">Login</button>
+
+
+                        <div id="id02" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button class=type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+
+                                </div>
+                            </form>
+                        </div>
+                </ul>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id02');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                </li>
+
+
+                </ul>
+
+
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <h1 id="t"> BOOKS AT BOOK-SHELF</h1>
+  
+
+    <div style="height: auto;"><img src="img/bookshelf2 (1).jpg" alt="books" width="1360"></div>
+    <hr>
+     
+    <!--Carousel-->
+
+    <section >
+      <h1 class="heading-carousel">YOUR FAVORITE NOVELS BOOKS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="হৃদমোহিনী.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/0c7949155_194566.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h4><b>"হৃদমোহিনী"</b></h4>
+                     <h6><b>রেশমী রফিক</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+        <div class="carousel-cell">
+          <a href="কৃষ্ণপক্ষ.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/68cb707d2_1354.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"কৃষ্ণপক্ষ"</b></h4>
+                      <h6><b> হুমায়ূন আহমেদ</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="শবনম.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/d2e34ba1e4a4_80413.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"শবনম"</b></h4>
+                      <h6><b> সৈয়দ মুজতবা আলী</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="ফানুস.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/d73a064bf_207809.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"ফানুস"</b></h4>
+                      <h6><b>মৌরি মরিয়ম</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="পারাবত.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/527bedb25_209570.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"পারাবত"</b></h4>
+                      <h6><b> তানভীর রাফি</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="মহাযাত্রা.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/9f3401d53_208433.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"মহাযাত্রা"</b></h4>
+                      <h6><b> মৌরি মরিয়ম</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="নির্বাসন.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/5cfe859c3_176988 (1).jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"নির্বাসন"</b></h4>
+                      <h6><b>সাদাত হোসাইন</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="অভিমানিনী.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/3b29ed6fb_177035.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"অভিমানিনী"</b></h4>
+                      <h6><b>  মৌরি মরিয়ম</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="আলোমতি.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/38e4cd66e_205317.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"আলোমতি"</b></h4>
+                      <h6><b> মোহাম্মদ অংকন</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="মায়াস্বর্গ.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img/1e1cfa4a2_202284.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"মায়াস্বর্গ"</b></h4>
+                      <h6><b> মোশতাক আহমেদ</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+    <section >
+      <h1 class="heading-carousel">SCIENCE AND FICTION BOOKS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="Dark matter.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/0ceee7e08_206786 - Copy.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h4><b>"ডার্ক ম্যাটার"</b></h4>
+                     <h6><b>ব্লেডার্ক ম্যাটার</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+        <div class="carousel-cell">
+          <a href="Serina.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/175d2eec4_94316.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"সেরিনা"</b></h4>
+                      <h6><b> মুহম্মদ জাফর ইকবাল</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Glina.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/1a249763b_194725.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"গ্লিনা"</b></h4>
+                      <h6><b>মুহম্মদ জাফর ইকবাল </b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="Shunno.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/img141201_1336.gif" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"শূন্য"</b></h4>
+                      <h6><b>হুমায়ূন আহমেদ</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Moyal.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/2a06825e2_195359.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"ময়াল"</b></h4>
+                      <h6><b> মুনির হাসান</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/df86b9e9e_211349.jpg " alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"মহাযাত্রা"</b></h4>
+                      <h6><b> মৌরি মরিয়ম</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="agontuk.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/fe193474e_205703.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"আগন্তুক"</b></h4>
+                      <h6><b> অপরেশ বন্দ্যোপাধ্যায়</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="Niyan.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/5a1c96358_177052.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"নিয়ান"</b></h4>
+                      <h6><b> মুহম্মদ জাফর ইকবাল</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="onumanob.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/383df8dc1_205294.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"অণুমানব"</b></h4>
+                      <h6><b> মোশতাক আহমেদ</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="omanob.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-scince/d13ca4dfc_197534.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"অমানব "</b></h4>
+                      <h6><b>তানজিরুল ইসলাম </b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+    </section>
+
+
+    
+    <section >
+      <h1 class="heading-carousel"> SELF DEVELOPMENT AND MOTIVATIONAL BOOKS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="Body language.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/1d0fb66bb_185600.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h5><b>"বডি ল্যাংগুয়েজ"</b></h5>
+                     <h6>এ্যালান পীস</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+        <div class="carousel-cell">
+          <a href="jiboner roadmap.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/4b9fe4fb8_206146.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"জীবনের রোডম্যাপ"</b></h5>
+                      <h6> সাজ্জাক হোসেন</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Emotional Intelligence.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/a53ace4a5_205712.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"ইমোশনাল ইন্টেলিজেন্স"</b></h5>
+                      <h6> রুশদিনা খান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="managing your boss.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/a7c781a8f_206684.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"ম্যানেজিং ইউর বস"</b></h5>
+                      <h6> জন জ. গেবেরো</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="corporate leadership.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/b0cd28209_204742.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"কর্পোরেট লিডারশিপ"</b></h5>
+                      <h6> তৌফিকুর রহমান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="The hidden power.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/ba35c3771_178044.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"দ্য হিডেন পাওয়ার"</b></h5>
+                      <h6>  সত্যজিৎ চক্রবর্ত্তী</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="think and grow rich.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/c35e13796_157018.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"থিংক এন্ড গ্রো রিচ"</b></h5>
+                      <h6> নেপোলিয়ন হিল</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="Passive income.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/ce0140bed_206961.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"প্যাসিভ ইনকাম"</b></h5>
+                      <h6>  রালফ ওয়াটারস</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="Shopner Campus.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/ddd5180c6_204406.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"স্বপ্নের ক্যাম্পাস"</b></h5>
+                      <h6> জোনাইদ আল হাবীব</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="shorbote bajimat.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-self/f35aca1f0_156204.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"শরবতে বাজিমাত"</b></h5>
+                      <h6> মুনির হাসান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+    </section>
+
+    <section >
+      <h1 class="heading-carousel"> CAREER AND SKILL DEVELOPMENT</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="Java programming.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/059bccd386b4_129165.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h5><b>"জাভা প্রোগ্রামিং"</b></h5>
+                     <h6>বজলুর রহমান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+        <div class="carousel-cell">
+          <a href="Ethical hacking.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/311e39eb3_208755.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"এথিক্যাল হ্যাকিং"</b></h5>
+                      <h6> রুবাইয়াত আকবর</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Python.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/43f91c787_208621.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"পাইথন"</b></h5>
+                      <h6> ইয়াসির আরাফাত</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="mastering seo.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/710f95cef_196668.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"মাস্টারিং এসইও"</b></h5>
+                      <h6>মোঃ মাজহারুল হক</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="freelansing.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/8fdd75770_194484.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"ফ্রিল্যান্সিং"</b></h4>
+                      <h6> ফ্রিল্যান্সার নাসিম</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="Americay ucchoshikkha.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/9d1af6f47_211773.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"আমেরিকায় উচ্চশিক্ষা"</b></h5>
+                      <h6>  রাগিব হাসান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="Shobar jonno ubuntu.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/a79885144_179384.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h5><b>"সবার জন্য উবুন্টু"</b></h5>
+                      
+                      <h6>নাসির খান</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="hate kolome Javascript.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-career/e53af8191_202772.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"হাতে কলমে জাভাস্ক্রিপ্ট"</b></h5   >
+                      <h6> মৌরি মরিয়ম</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        
+    </section>
+
+
+
+
+
+
+    <section >
+      <h1 class="heading-carousel"> ISLAMIC BOOKS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="moddhompontha.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/72bad9c17_203554.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h4><b>"মধ্যমপন্থা"</b></h4>
+                     <h6>ড. ইউসুফ আল কারযাভী</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+        <div class="carousel-cell">
+          <a href="Halal binodon.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/fcb01153ba84_140518.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"হালাল বিনোদন"</b></h5>
+                      <h6> মাসুদ শরীফ</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Char Tara.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/e0f34a054_202898.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"চার তারা"</b></h4>
+                      <h6><b> আরিফুল ইসলাম</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="Epitaf.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/b4648017a_195484.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"এপিটাফ"</b></h4>
+                      <h6><b> মোহাম্মাদ হবলোস</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="remedi.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/e809f3874_204806.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"রিমেডি"</b></h4>
+                      <h6><b> জাফর বিপি</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="Huzur Miyar bou.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/7a85bdc8b_206962.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"হুজুর মিয়ার বউ"</b></h5>
+                      <h6>  মুস্তাফিজ ইবনে আনির</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="remedi.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/e809f3874_204806.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"রিমেডি"</b></h5>
+                      <h6>জাফর বিপি</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="nobobi Adorsho.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-islamic/c8517a229_206216.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"নববি আদর্শ"</b></h4>
+                      <h6>শাইখ আহমাদ মুস্তফা কাসেম আত-তাহতাভী</h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        
+    </section>
+
+
+
+    <section >
+      <h1 class="heading-carousel"> FOREIGN BOOKS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        
+
+       
+        <div class="carousel-cell">
+          <a href="me.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/k.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"ME"</b></h4>
+                      <h6><b>Elton John</b></h6>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+
+
+
+        <div class="carousel-cell">
+          <a href="Wild game.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/n.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>"Wild Game"</b></h5>
+                      <h6>Adrienne Brodeur </h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="Earth.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/o.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"Earth"</b></h4>
+                      <h6><b>David Brin</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="The body.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/p.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"The Body"</b></h4>
+                      <h6><b>Bill Bryson</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="saint x.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/u.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"Saint X"</b></h4>
+                      <h6><b> Alexis Schaitkin</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="all girls.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/51fUHQhNWkL._AC_SX184_.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"All Girls"</b></h4>
+                      <h6><b>Emily Layden </b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="My brilliant life.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/51JEKxwYhfL._AC_SX184_.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h6><b>"My Brilliant Life"</b></h6>
+                      <h6>Ae-ran Kim </h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+        <div class="carousel-cell">
+          <a href="me.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/k.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>"ME"</b></h4>
+                      <h6><b>Elton Johnson</b></h6>
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+        <div class="carousel-cell">
+          <a href="Tucker.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-foreign/g.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      
+                      <h6><b>"Tucker"</b></h6>
+                      <h6> Emily March </h6>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        
+    </section>
+
+
+    <section >
+      <h1 class="heading-carousel">TOP AUTHORS</h1>
+      <hr>
+  
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <a href="Munzerin Shahid .html">
+              <div class="wrap">
+                  <div class="card">
+                    <img  src="img-author/munzerin.jpg" alt="" >
+                    <div class="container">
+                      <hr>
+                      
+                      <h4><b>Munzerin Shahid</b></h4>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+        
+
+
+        <div class="carousel-cell">
+          <a href="Chamak Hasan.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/chomok.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Chamak Hasan</b></h4>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+
+
+        <div class="carousel-cell">
+          <a href="Tahsan.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/tahsan.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Tahsan<br> Khan</b></h4>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+       
+        
+          <div class="carousel-cell">
+          <a href="hUMAYUN.html ">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/humayun.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Humayun Ahmed</b></h4>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+      
+
+        <div class="carousel-cell">
+          <a href="">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/jahangir.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Dr. Khonokar Abdullah jahangir</b></h4>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+        <div class="carousel-cell">
+          <a href="jafor.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/jafor.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Zafor  Iqbal</b></h4>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+
+        <div class="carousel-cell">
+          <a href="C:\Users\hp\Desktop\Bookshelf.com\ahmadullah.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/ahmad.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h5><b>Ahmad Ullah</b></h5>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="Arif Azad.html">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/arif.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Arif Azad</b></h4>
+                      
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        
+
+        <div class="carousel-cell">
+          <a href="">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/ragib.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Ragib Hasan</b></h4>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+        
+
+        <div class="carousel-cell">
+          <a href="">
+              <div class="wrap">
+                  <div class="card">
+                    <img src="img-author/sofa.jpg" alt="">
+                    <div class="container">
+                      <hr>
+                      <h4><b>Ahmod Sofa</b></h4>
+                     
+                    </div>
+              
+                  </div>
+              
+                </div>
+          </a>
+        </div>
+
+        
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+
+
+
+      
+    <!--Footer-->
+
+      <footer class="large-footer">
+    
+        <button  onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+  
+       
+        
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+      
+      <p id="service">Book-Shelf services</p>
+      <hr>
+      <div class="container-fluid custom-container" style="margin-left: 20px;">
+        <div class="row">
+  
+          
+            <div class="footer-logo">
+              <a href="/">
+                
+              </a>
+            </div>
+            <div class="footer-basic-info" >
+              <p><img src="img/hotline.png" alt="Hotline"> Hotline: &nbsp; <em>16297 or 09609616297</em></p>
+             <p><img src="img/corporate.png" alt="Corporate Sales"> Corporate Sales: &nbsp;
+                <em>+8801638391910</em></p>
+              <p><img src="img/email.png" alt="Email"> <a
+                  href="mailto:muhtasimjami@gmail.com"> <span class="__cf_email__"
+                    data-cfemail="3b5a5f5652557b49545054565a495215585456">muhtasimjami@gmail.com</span></a> </p>
+              <p><img src="img/address.png" alt="Address"> Address:&nbsp; Amberkhana, Sylhet</p>
+            </div>
+            <div class="col-5 col-xl-6">
+            <div class="social-links">
+             
+              <p>Stay Connected</p>
+              <a target="_blank" href="https://www.facebook.com"> <img src="img/facebook.png"
+                  alt="facebook" title="Facebook" class="Social-link"> </a>
+              <a target="_blank" href="https://twitter.com"> <img src="img/twiter.png"
+                  alt="twitter" title="Twitter" class="Social-link"> </a>
+              <!-- <a href="#"> <img src="/static/200/images/google-plus.png" alt="googlePlus" title="Google+"> </a> -->
+              <a target="_blank" href="https://www.linkedin.com"> <img
+                src="img/link.png" alt="linkedin" title="Linkedin"  class="Social-link"> </a>
+
+              <!-- <a href="#"> <img src="/static/200/images/pinterest.png" alt="pinterest" title="Pinterest"> </a> -->
+              <a target="_blank" href="https://www.instagram.com"> <img src="img/instra.png"
+                  alt="instagram" title="Instagram"  class="instagram"> </a>
+                
+              
+            </div>
+          </div>
+  
+          
+  
+  
+  
+  
+      <hr style="margin-top: 1cm;">
+
+
+      <div class="payment-options-row" >
+  
+        <div class=" d-flex justify-content-center">
+          <div class="payment-options">
+            <p class="align-middle">We accept payment via </p>
+         
+            <img class="cod" src= "img/cod.png" alt="CashOnDelivery" title="Cash On Delivery">
+            <img class="bKash" src="img/bkash.png" alt="bKash" title="bKash">
+            <img class="visa" src="img/visa.png" alt="Visa" title="Visa">
+            <img class="master-card" src="img/master-card.png" alt="Master Card" title="Master Card">
+            <img class="amex" src="img/amex-card.png" alt="American Express" title="American Express">
+            <img class="rocket" src="img/rocket.png" alt="Rocket" title="Rocket">
+            <img class="city-bank" src="img/city-bank.png" alt="City Bank" title="City Bank">
+            <img class="dmoney" src="img/dmoney.png" alt="Dmoney" title="DMoney" width="120px">
+         
+          </div>
+        </div>
+      </div>
+  
+      <hr style="margin-top: 1cm;">
+  
+      <div class="company-summery-row">
+        <div class="d-flex justify-content-center">
+          <div class="company-summery">
+            <p>
+              Book-Shelf.com is  one of the best online bookshop or bookstore in Bangladesh that helps you save time and money. You can buy books online with
+              a few clicks or a convenient phone call With breathtaking discounts and offers you can buy anything from
+              Bangla Upannash or English story books to academic, research or competitive exam books. Superfast cash on
+              delivery service brings the products at your doorstep. Our customer support, return and replacement policies
+              will surely add extra confidence in your online shopping experience. Happy Shopping with  Book-Shelf.com!
+            </p>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="col copyright">
+        <p class="text-center"> &#169;2021 Book-Shelf.com</p>
+      </div>
+  
+  
+    </footer>
+  
+  
+  
+    
+</body>
+</html>
